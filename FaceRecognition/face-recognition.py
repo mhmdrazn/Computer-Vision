@@ -19,7 +19,7 @@ while True:
         cv2.rectangle(frame, (x,y), (x+w, y+h), (255, 0, 0), 2)
         id, confidence = recognizer.predict(gray[y:y+h, x:x+w])
 
-        if confidence <95: 
+        if confidence < 90:
             id = names[id]
         else:
             id = "unknown"

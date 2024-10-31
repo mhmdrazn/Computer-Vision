@@ -27,7 +27,7 @@ while True:
 
     if cv2.waitKey(1) == ord('q'):
         break
-    elif count == 80:
+    elif count == 100:
         break
 
 camera.release()
